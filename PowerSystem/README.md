@@ -7,6 +7,7 @@ The power converter has four stages: a passive rectifier, an inverter (18kHz) dr
 ## Status Update
 Recently achieved -20kVDC output at open load from 40VAC input, Q from resonator was higher than expected from simulation. Arcing occured at this voltage, working on re-insulating to prevent future firework displays. 
 
+## Integrated Supply
 <img src="images/Assembly_3D.png" width="350" />  <img src="images/Assembly_Real1.png" width="250" /> 
 
 ## PCB1: Passive Rectifier & 18kHz Inverter
