@@ -1,0 +1,3 @@
+*SRC=GBJ2510;DI_GBJ2510;Diodes;Si;  1.00kV  25.0A  3.00us   Diodes Inc. Bridge Rectifier--Per Element
+.MODEL DI_GBJ2510 D  ( IS=379n RS=2.84m BV=1.00k IBV=10.0u
++ CJO=146p  M=0.333 N=2.07 TT=4.32u )
