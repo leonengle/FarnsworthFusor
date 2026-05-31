@@ -10,6 +10,9 @@ Recently achieved -20kVDC output at open load from 40VAC input, Q from resonator
 ## Integrated Supply
 <img src="images/Assembly_3D.png" width="350" />  <img src="images/Assembly_Real1.png" width="250" /> 
 
+## LTSpice Model
+<img src="images/LTSpice.png" width="1000" /> 
+
 ## PCB1: Passive Rectifier & 18kHz Inverter
 ### Top-Level Schematic
 <img src="images/PCB1_Schematic_Top.png" width="1000" /> 
