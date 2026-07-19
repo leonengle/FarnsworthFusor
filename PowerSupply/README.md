@@ -28,7 +28,7 @@ These results were used to simulate LLC gain curves and create a feedforward fun
 ### LLC Gain Curves (Lr and Lm from Ansys FEA)
 Two models were used to derive LLC gain curves: a FHA computed with MATLAB and an LTSpice AC analysis. These models were used to determine a suitable resonant capacitor and series L (to add in series with Lr) to achieve desired gain curve. The series L was required since the fusor load is very light, damping series resonant peak. A peaky resonance is desired so the required output voltage range is attainable in a smaller range of frequencies. An L of 800uH (200uH Lr + 600uH series L) and C of 250nF resulted in desired series resonant frequency (fsr).
 
-<img src="images/matlab_fha.png" width="400" />  <img src="images/ltspice_LLC_ideal.png" width="300" /> 
+<img src="images/matlab_fha.png" width="400" />  <img src="images/ltspice_LLC_ideal.png" width="400" /> 
 
 ### LLC Gain Curves (Lr and Lm measured with RidleyBox)
 LT Spice has been used to simulate the LLC gain curve, including parasitics measured by RidleyBox. Next steps are to update MATLAB state-space model and feedforward function. 
