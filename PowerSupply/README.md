@@ -68,4 +68,5 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
 
 ### Transformer Design
 Bobbins and equations used to design transformer. UU core, wound non-concentrically to increase leakage inductance for LLC. Litz wire on primary. 
-<img src="images/xf_bobbins.png" width="350" /> 
+
+<img src="images/xf_bobbins.png" width="550" /> 
