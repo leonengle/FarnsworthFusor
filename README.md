@@ -4,7 +4,7 @@ This repository contains the design (in progress) of a Farnsworth Fusor supervis
 
 The repository is divided into a directory containing Python code for a Supervisory Control and Data Acquisition (SCADA) and a directory documenting the progress of the power supply.
 
-<strong>See the power supply directory for what I (Leon) am currently working on. </strong>
+See the power supply directory for what I (Leon) am currently working on.
 
 ## System Block Diagram
 This is the original system block diagram made for our Capstone project. Several updates have been made since this was produced, see the sub-directories for more information. 
