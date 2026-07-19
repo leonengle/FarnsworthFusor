@@ -21,6 +21,7 @@ This model was used to verify output voltage, tune dead time, and determine DC l
 ### Modeling of Transformer
 Leakage inductance Lr and magnetizing inductance Lm were derived from an Ansys FEA, and measured with the RidleyBox Frequency Response Analyzer. Ansys FEA results were Lr=11.2uH and Lm=2.63mH. RidleyBox measurements were Lr=200uH and Lm=2.50mH. Measured magnetizing inductance was close to predicted, but Ansys FEA did not correctly account for leakage paths. 
 
+
 The red RidleyBox sweep is Lm (XF secondary open) and the blue sweep is Lr (XF secondary shorted). 
 
 <img src="images/ansys.png" width="300" />  <img src="images/ridleybox_sweeps.png" width="550" /> 
