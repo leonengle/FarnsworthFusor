@@ -10,7 +10,7 @@ This is the original system block diagram made for our Capstone project. Several
 <img src="images/FusorTasks_TopDown - System.png" width="800" />
 
 ## Supervisory Controller Logic (Finite State Machine)
-The SCADA contains a supervisory FSM which sequences startup and shutdown actions like opening valves, turning on rotary vane/turbo pumps, and turning on the power supply. This is implemented in Python, and will be coupled with an MPC that calculates voltage and pressure setpoints. These setpoints will then be transmitted to the desired peripherals via and Raspberry Pi. 
+The SCADA contains a supervisory FSM which sequences startup and shutdown actions like opening valves, turning on rotary vane/turbo pumps, and turning on the power supply. This is implemented in Python, and will be coupled with a controller that calculates voltage and pressure setpoints. These setpoints will then be transmitted to the desired peripherals via a Raspberry Pi. 
 
 Several updates must be made to this diagram. The current design focus is on the power supply, where much of the architecture has changed. Once the power supply is complete, the FSM can be updated relatively easily in the Python software.
 
