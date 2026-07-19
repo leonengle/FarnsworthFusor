@@ -69,4 +69,4 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
 ### Transformer Design
 Bobbins and equations used to design transformer. UU core, wound non-concentrically to increase leakage inductance for LLC. Litz wire on primary. The transformer is mounted on machined HDPE mounts, since PLA/ABS do not have required dielectric constant to maintain creepage threshold.
 
-<img src="images/xf_bobbins.png" width="700" /> <img src="images/xf_photo.png" width="300" /> 
+<img src="images/xf_bobbins.png" width="650" /> <img src="images/xf_photo.png" width="350" /> 
