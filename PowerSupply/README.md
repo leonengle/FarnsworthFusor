@@ -48,20 +48,20 @@ The plan is to use a Simulink model of the power converter to validate the power
 ### Rectifier and Inverter PCB
 This PCB includes the rectifier, switcher and series capacitor for LLC stage. The design had several issues that are being fixed. 
 #### Top-Level Schematic
-<img src="images/PCB1_Schematic_Top.png" width="1000" /> 
+<img src="images/PCB1_Schematic_Top.png" width="700" /> 
 
 #### Rectifier & Inverter Schematic
-<img src="images/PCB1_Schematic_RI.png" width="1000" /> 
+<img src="images/PCB1_Schematic_RI.png" width="700" /> 
 
 #### Microcontroller Schematic
-<img src="images/PCB1_Schematic_uC.png" width="600" /> 
+<img src="images/PCB1_Schematic_uC.png" width="500" /> 
 
 #### 2D & 3D View of PCB
 <img src="images/PCB1_2D.png" width="500" />  <img src="images/PCB1_3D.png" width="350" /> 
 
 ### Voltage Multiplier PCB
 #### Top-Level Schematic
-<img src="images/PCB2_Schematic.png" width="1000" /> 
+<img src="images/PCB2_Schematic.png" width="700" /> 
 
 #### 2D & 3D View of PCB
 <img src="images/PCB2_2D.png" width="500" />  <img src="images/PCB2_3D.png" width="350" /> 
@@ -69,4 +69,4 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
 ### Transformer Design
 Bobbins and equations used to design transformer. UU core, wound non-concentrically to increase leakage inductance for LLC. Litz wire on primary. 
 
-<img src="images/xf_bobbins.png" width="550" /> 
+<img src="images/xf_bobbins.png" width="700" /> 
