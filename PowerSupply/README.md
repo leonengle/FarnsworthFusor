@@ -19,7 +19,7 @@ This model was used to verify output voltage, tune dead time, and determine DC l
 
 ## LLC Stage
 ### Modeling of Transformer
-Leakage inductance Lr and magnetizing inductance Lm were derived from an Ansys FEA, and measured with the RidleyBox Frequency Response Analyzer. Ansys FEA results were Lr=11.2uH and Lm=2.63mH. RidleyBox measurements were Lr=200uH and Lm=2.50mH. Measured magnetizing inductance was close to predicted, but Ansys FEA did not correctly account for leakage paths. 
+Leakage inductance Lr and magnetizing inductance Lm were derived from an Ansys FEA, and measured with the RidleyBox Frequency Response Analyzer. Ansys FEA results were Lr=11.2uH and Lm=2.63mH. RidleyBox measurements were Lr=200uH and Lm=2.50mH. Measured magnetizing inductance was close to predicted, but Ansys FEA did not correctly account for leakage paths. The red RidleyBox sweep is Lm (XF secondary open) and the blue sweep is Lr (XF secondary shorted). 
 
 <img src="images/ansys.png" width="300" />  <img src="images/ridleybox_sweeps.png" width="550" /> 
 
@@ -65,4 +65,4 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
 
 ### Transformer Design
 Bobbins and equations used to design transformer. UU core, wound non-concentrically to increase leakage inductance for LLC. Litz wire on primary. 
-<img src="images/PCB2_3D.png" width="350" /> 
+<img src="images/xf_bobbins.png" width="350" /> 
