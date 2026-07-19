@@ -1,13 +1,17 @@
 # Automated Farnsworth Fusor
 ## Background
-A Farnsworth Fusor (fusor for short) is a machine that produces the conditions for nuclear fusion using the method of electrostatic confinement. At its simplest, a neutron-producing fusor consists of a wire grid connected to the hot terminal of a power supply (usually -20kVDC 200W output or greater) and a grounded vacuum chamber. The energized wire grid is mounted in the center of the grounded vacuum chamber, creating a strong electric field between the center of the chamber and its walls. The electric field ionizes an injected deuterium gas and accelerates the ions to a degree where collisions have a chance to result in fusion.
+This repository contains the design (in progress) of a Farnsworth Fusor supervisory control and power supply design supporting automatic control of operations from startup to neutron production to shutdown. 
 
-We are developing a fully digitized 120VAC to -33kVDC power converter (400W) and control system software library compatible with a Farnsworth Fusor. While not a feasible method for power generation, building and operating a Farnsworth Fusor provides students with many opportunities for learning the principles of nuclear fusion and related systems. Our verified designs will be released open source, to provide to universities a feasible pathway to teach students the principles of nuclear fusion in an immersive way. 
-
-Our design enables automatic control of the Farnsworth Fusor operating cycle, requiring user input only to initiate startup and shutdown procedures. This feature is not supported by currently published Farnsworth Fusor designs and will enable students to practice implementing control algorithms on a fusion-capable testbench. Learning activities in these areas will prepare students for design work on frontier fusion machines around the world.
+The repository is divided into a directory containing Python code for a Supervisory Control and Data Acquisition (SCADA) and a directory documenting the progress of the power supply. 
 
 ## System Block Diagram
-<img src="images/FusorTasks_TopDown - System.png" width="1000" />
+This is the original system block diagram made for our Capstone project. Several updates have been made since this was produced, see the sub-directories for more information. 
+
+<img src="images/FusorTasks_TopDown - System.png" width="800" />
 
 ## Supervisory Controller Logic (Finite State Machine)
-<img src="images/FusorTasks_TopDown - Software.png" width="800" />
+The SCADA contains a supervisory FSM which sequences startup and shutdown actions like opening valves, turning on rotarty vane/turbo pumps, and turning on the power supply. This is implemented in Python, and will be coupled with an MPC that calculates voltage and pressure setpoints. These setpoints will then be transmitted to the desired peripherals via and Raspberry Pi. 
+
+Several updates must be made to this diagram. The current design focus is on the power supply, where much of the architecture has changed. Once the power supply is complete, the FSM can be updated relatively easily in the Python software.
+
+<img src="images/FusorTasks_TopDown - Software.png" width="500" />
