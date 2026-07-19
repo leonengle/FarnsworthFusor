@@ -2,8 +2,8 @@
 ## Overview
 Here a design (in progress) is presented for a 400W 120VrmsAC 60Hz -> -33kVDC Power Converter; to power a Farnsworth Fusor. The power converter has four stages: a rectifier, an inverter, a ferrite 1:30 transformer, and an 8x voltage multiplier. 
 
-## Status Update
-Recently achieved -20kVDC output at open load from 40VAC input (open-loop control), using a VFD borrowed from a professor. Significant corona discharge occured at this voltage, working on re-insulating. Currently redesigning switcher (migrating from IGBTs to SiC and from PIC 18F micro to TI C2000 series), implementing the i control loop, and doing a design study on an optimal transformer with evolutionary computing methods. It is a passion project that takes a backseat to my other commitments, so I am expecting it to take years. 
+## Status Update (July 19 2026)
+Recently achieved -20kVDC output at open load from 40VAC input (open-loop control), using a VFD borrowed from a professor. Significant corona discharge occured at this voltage, working on re-insulating. Currently redesigning switcher (migrating from IGBTs to SiC and from PIC 18F micro to TI C2000 series), simulating the i control loop, and doing a design study on an optimal transformer with evolutionary computing methods. It is a passion project that takes a backseat to my other commitments, so I am expecting it to take years. 
 
 ## Integrated Supply
 3D model of the power supply assembly and current build state. 
