@@ -3,7 +3,7 @@
 Here a design (in progress) is presented for a 400W 120VrmsAC 60Hz -> -33kVDC Power Converter; to power a Farnsworth Fusor. The power converter has four stages: a rectifier, an inverter, a ferrite 1:30 transformer, and an 8x voltage multiplier. 
 
 ## Status Update (July 19 2026)
-Recently achieved -20kVDC output at open load from 40VAC input (open-loop control), using a VFD borrowed from a professor. Significant corona discharge occured at this voltage, working on re-insulating. Currently redesigning switcher (migrating from IGBTs to SiC and from PIC 18F micro to TI C2000 series), simulating the i control loop, and doing a design study on an optimal transformer with evolutionary computing methods. It is a passion project that takes a backseat to my other commitments, so I am expecting it to take years. 
+Recently achieved -20kVDC output at open load from 40VAC input (open-loop control), using a VFD borrowed from a professor. Significant corona discharge occured at this voltage, working on re-insulating. Currently redesigning switcher (migrating from IGBTs to SiC and from PIC 18F micro to TI C2000 series), and simulating the i control loop. It is a passion project that takes a backseat to my other commitments, so I am expecting it to take years. 
 
 ## Integrated Supply
 3D model of the power supply assembly and current build state. 
@@ -38,7 +38,7 @@ LT Spice has been used to simulate the LLC gain curve, including parasitics meas
 
 ## Control System
 ### Simulink Models
-The plan is to use a Simulink model of the power converter to validate the power supply control loop, then use the C2000 Toolbox to flash the control loop onto a TI C2000 microcontroller. The control architecture being pursued is an MPC calculating the least energy path from measured current i to desired current i. The goal is to use the IV curve of a Townsend Avalanche in series with the voltage-to-frequency function to calculate required frequency as a function of i_error. 
+The plan is to use a Simulink model of the power converter to validate the power supply control loop, then use the C2000 Toolbox to flash the control loop onto a TI C2000 microcontroller. The goal is to use the IV curve of a Townsend Avalanche in series with the voltage-to-frequency function to calculate required frequency as a function of i_error. 
 
 <img src="images/simulink_validation.png" width="800" />
 
