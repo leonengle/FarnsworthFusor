@@ -39,7 +39,7 @@ The SCADA implements a Finite State Machine (FSM) which iterates through the sta
 Controller 1 regulates fusor pressure when the power supply is de-energized. The legend applies to the control loops below as well.
 
 <p align="center">
-  <img src="images/controller1.png" alt="Controller 1 block diagram" width="48%">
+  <img src="images/Controller1.png" alt="Controller 1 block diagram" width="48%">
   <img src="images/legend.png" alt="Control loop diagram legend" width="28%">
   <br>
   <em>Fig. 4 &mdash; Controller 1: fusor pressure regulation with the power supply de-energized.&nbsp;&nbsp;&nbsp;&nbsp;Fig. 5 &mdash; Legend for the control loop block diagrams.</em>
