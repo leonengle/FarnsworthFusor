@@ -8,6 +8,8 @@ This repository contains the design (in progress) of a Farnsworth Fusor control 
 
 The first power supply design was a 400W 120VrmsAC 60Hz -> -33kVDC Power Converter; to power a Farnsworth Fusor. The power converter has four stages: a rectifier, an inverter, a ferrite 1:30 transformer, and an 8x voltage multiplier. Recently achieved -20kVDC output with XF and Voltage Multiplier stages at open load from 40VAC input (open-loop control), using a VFD borrowed from a professor. The switcher has not been fabricated yet due to financial reasons but shouldn't fatally destruct in theory.
 
+For more information on the design process for this power supply see 'PowerSupplyDesign1' directory and README.
+
 <table align="center" width="75%">
   <tr>
     <td align="center">
