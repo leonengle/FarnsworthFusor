@@ -57,8 +57,8 @@ Controller 2 regulates fusor pressure, current and voltage while the power suppl
 - 0.01Hz BW Voltage Loop (Fig. 7): uses pressure to regulate the voltage over a long time-horizon. Paschen's Curve relates pressure-distance to Voltage and forms a parabola. Thus, a PI loop with negative gain can increase Voltage by decreasing pressure (since the fusor current is fixed by the 100Hz BW Current Loop), and vice versa. The initial pressure when the power supply is energized is chosen to be at the Paschen minimum (which I plan to empirically derive), to minimize the PI loop's time in the operating region where increasing pressure increases breakdown voltage.
 
 <p align="center">
-  <img src="images/Controller2_inner.png" alt="Controller 2 inner loop block diagram" width="44%">
-  <img src="images/Controller2_outer.png" alt="Controller 2 outer loop block diagram" width="44%">
+  <img src="images/Controller2_inner.png" alt="Controller 2 inner loop block diagram" width="38%">
+  <img src="images/Controller2_outer.png" alt="Controller 2 outer loop block diagram" width="50%">
   <br>
   <em>Fig. 6 &mdash; Controller 2 loops: 10kHz current, 1kHz PLL, 100Hz voltage.&nbsp;&nbsp;&nbsp;&nbsp;Fig. 7 &mdash; Controller 2 loops: 10Hz current, 0.1Hz pressure, 0.01Hz voltage.</em>
 </p>
