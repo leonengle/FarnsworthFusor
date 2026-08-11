@@ -40,7 +40,7 @@ Controller 1 regulates fusor pressure when the power supply is de-energized. The
 
 <p align="center">
   <img src="images/Controller1.png" alt="Controller 1 block diagram" width="48%">
-  <img src="images/legend.png" alt="Control loop diagram legend" width="28%">
+  <img src="images/legend.png" alt="Control loop diagram legend" width="40%">
   <br>
   <em>Fig. 4 &mdash; Controller 1: fusor pressure regulation with the power supply de-energized.&nbsp;&nbsp;&nbsp;&nbsp;Fig. 5 &mdash; Legend for the control loop block diagrams.</em>
 </p>
