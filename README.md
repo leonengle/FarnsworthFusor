@@ -29,7 +29,7 @@ A Supervisory Control and Data Acquisition (SCADA) System written in Python allo
   <img src="images/scada2.png" alt="SCADA manual control panel" width="31%">
   <img src="images/scada3.png" alt="SCADA shutdown and alarm view" width="31%">
   <br>
-  <em>Fig. 3 &mdash; SCADA interface: monitoring dashboard, manual control panel, and shutdown/alarm view.</em>
+  <em>Fig. 3 &mdash; SCADA interface: manual control panel, monitoring dashboard, and Automatic Control Window.</em>
 </p>
 
 The SCADA implements a Finite State Machine (FSM) which iterates through the startup and shutdown process, defining setpoints for the two downstream control loops.
@@ -60,7 +60,7 @@ Controller 2 regulates fusor pressure, current and voltage while the power suppl
   <img src="images/Controller2_inner.png" alt="Controller 2 inner loop block diagram" width="44%">
   <img src="images/Controller2_outer.png" alt="Controller 2 outer loop block diagram" width="44%">
   <br>
-  <em>Fig. 6 &mdash; Controller 2 inner loops: 10kHz current, 1kHz PLL, 100Hz voltage.&nbsp;&nbsp;&nbsp;&nbsp;Fig. 7 &mdash; Controller 2 outer loops: 10Hz current, 0.1Hz pressure, 0.01Hz voltage.</em>
+  <em>Fig. 6 &mdash; Controller 2 loops: 10kHz current, 1kHz PLL, 100Hz voltage.&nbsp;&nbsp;&nbsp;&nbsp;Fig. 7 &mdash; Controller 2 loops: 10Hz current, 0.1Hz pressure, 0.01Hz voltage.</em>
 </p>
 
 ## Power Supply Design 2
