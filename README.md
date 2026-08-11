@@ -3,7 +3,7 @@
 This repository contains the design (in progress) of a Farnsworth Fusor control system and power supply design supporting automatic control of operations from startup to neutron production to shutdown. 
 
 ## Power Supply Design 1
-
+The first power supply design was a 400W 120VrmsAC 60Hz -> -33kVDC Power Converter; to power a Farnsworth Fusor. The power converter has four stages: a rectifier, an inverter, a ferrite 1:30 transformer, and an 8x voltage multiplier.
 <PS1>
 <PS1_real>
 
