@@ -51,7 +51,7 @@ The SCADA implements a Finite State Machine (FSM) which iterates through the sta
 
 ### Controller 1
 
-Controller 1 regulates fusor pressure when the power supply is de-energized. The legend applies to the control loops below as well.
+Controller 1 regulates fusor pressure when the power supply is de-energized. The actuator for this loop is either the Deuterium Fuel Supply Valve or the Vacuum System Valve, as determined by the SCADA.
 
 <table align="center" width="88%">
   <tr>
