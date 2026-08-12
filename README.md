@@ -32,7 +32,7 @@ For more information on the design process for this power supply see 'PowerSuppl
 
 ## Control System Architecture
 
-A Supervisory Control and Data Acquisition (SCADA) System written in Python allows the user to monitor the fusor and activate emergency shutdown procedures. A manual control panel is included for controller tuning purposes.
+A Supervisory Control and Data Acquisition (SCADA) System written in Python allows the user to monitor the fusor and activate emergency shutdown procedures. A manual control panel is included for controller tuning purposes. This control system has been designed to support Power Supply Design 2.
 
 <table align="center" width="93%">
   <tr>
@@ -70,7 +70,7 @@ Controller 1 regulates fusor pressure when the power supply is de-energized. The
 
 ### Controller 2
 
-Controller 2 regulates fusor pressure, current and voltage while the power supply is energized. This control system has been designed to support Power Supply Design 2. There are 6 control loops with varying bandwidths:
+Controller 2 regulates fusor pressure, current and voltage while the power supply is energized. There are 6 control loops with varying bandwidths:
 
 - 10kHz BW Current Loop (Fig. 6): regulates buck converter inductor current, to ensure adequate phase and gain margin of the individual bucks.
 - 1kHz BW PLL (Fig. 6): ensures the 6 IPOS modules are 60 degrees out of phase with each other, minimizing output ripple.
