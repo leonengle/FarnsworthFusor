@@ -49,6 +49,16 @@ A Supervisory Control and Data Acquisition (SCADA) System written in Python allo
 
 The SCADA implements a Finite State Machine (FSM) which iterates through the startup and shutdown process, defining setpoints for the two downstream control loops.
 
+<table align="center" width="70%">
+  <tr>
+    <td align="center">
+      <img src="images/FSM.png" alt="Supervisory Finite State Machine" width="100%">
+      <br>
+      <em>Fig. 4 &mdash; Supervisory Finite State Machine.</em>
+    </td>
+  </tr>
+</table>
+
 ### Controller 1
 
 Controller 1 regulates fusor pressure when the power supply is de-energized. The actuator for this loop is either the Deuterium Fuel Supply Valve or the Vacuum System Valve, as determined by the SCADA.
@@ -58,12 +68,12 @@ Controller 1 regulates fusor pressure when the power supply is de-energized. The
     <td align="center" width="55%" valign="top">
       <img src="images/Controller1.png" alt="Controller 1 block diagram" width="100%">
       <br>
-      <em>Fig. 4 &mdash; Controller 1: fusor pressure regulation with the power supply de-energized.</em>
+      <em>Fig. 5 &mdash; Controller 1: fusor pressure regulation with the power supply de-energized.</em>
     </td>
     <td align="center" width="45%" valign="top">
       <img src="images/legend.png" alt="Control loop diagram legend" width="100%">
       <br>
-      <em>Fig. 5 &mdash; Legend for the control loop block diagrams.</em>
+      <em>Fig. 6 &mdash; Legend for the control loop block diagrams.</em>
     </td>
   </tr>
 </table>
@@ -72,24 +82,24 @@ Controller 1 regulates fusor pressure when the power supply is de-energized. The
 
 Controller 2 regulates fusor pressure, current and voltage while the power supply is energized. There are 6 control loops with varying bandwidths:
 
-- 10kHz BW Current Loop (Fig. 6): regulates buck converter inductor current, to ensure adequate phase and gain margin of the individual bucks.
-- 1kHz BW PLL (Fig. 6): ensures the 6 IPOS modules are 60 degrees out of phase with each other, minimizing output ripple.
-- 100Hz BW Voltage Loop (Fig. 6): regulates aggregate output voltage of all IPOS modules according to a setpoint determined by the 10Hz current loop.
-- 10Hz BW Current Loop (Fig. 7): configures the IPOS power supply as a current source for the fusor. A feedforward path whose gain G=V/I is the IV curve of a plasma predicts the power supply output voltage that will result in the intended current. A PI loop minimizes remaining error.
-- 0.1Hz BW Pressure Loop (Fig. 7): regulates pressure in the fusor chamber to match the setpoint determined by the 0.01Hz BW Voltage Loop. Both the Deuterium Supply Valve and Vacuum System Valve may be used to regulate pressure. It is desired to use fuel injection rate to regulate pressure, so when the Deuterium Supply Valve is not fully open or fully closed, it is chosen as the pressure actuator. Otherwise, the Vacuum System Valve is used to adjust pressure. Before turning on Controller 2, the Vacuum System Valve is used to establish a baseline pressure such that the Deuterium Supply Actuator shouldn't saturate.
-- 0.01Hz BW Voltage Loop (Fig. 7): uses pressure to regulate the voltage over a long time-horizon. Paschen's Curve relates pressure-distance to Voltage and forms a parabola. Thus, a PI loop with negative gain can increase Voltage by decreasing pressure (since the fusor current is fixed by the 100Hz BW Current Loop), and vice versa. The initial pressure when the power supply is energized is chosen to be at the Paschen minimum (which I plan to empirically derive), to minimize the PI loop's time in the operating region where increasing pressure increases breakdown voltage.
+- 10kHz BW Current Loop (Fig. 7): regulates buck converter inductor current, to ensure adequate phase and gain margin of the individual bucks.
+- 1kHz BW PLL (Fig. 7): ensures the 6 IPOS modules are 60 degrees out of phase with each other, minimizing output ripple.
+- 100Hz BW Voltage Loop (Fig. 7): regulates aggregate output voltage of all IPOS modules according to a setpoint determined by the 10Hz current loop.
+- 10Hz BW Current Loop (Fig. 8): configures the IPOS power supply as a current source for the fusor. A feedforward path whose gain G=V/I is the IV curve of a plasma predicts the power supply output voltage that will result in the intended current. A PI loop minimizes remaining error.
+- 0.1Hz BW Pressure Loop (Fig. 8): regulates pressure in the fusor chamber to match the setpoint determined by the 0.01Hz BW Voltage Loop. Both the Deuterium Supply Valve and Vacuum System Valve may be used to regulate pressure. It is desired to use fuel injection rate to regulate pressure, so when the Deuterium Supply Valve is not fully open or fully closed, it is chosen as the pressure actuator. Otherwise, the Vacuum System Valve is used to adjust pressure. Before turning on Controller 2, the Vacuum System Valve is used to establish a baseline pressure such that the Deuterium Supply Actuator shouldn't saturate.
+- 0.01Hz BW Voltage Loop (Fig. 8): uses pressure to regulate the voltage over a long time-horizon. Paschen's Curve relates pressure-distance to Voltage and forms a parabola. Thus, a PI loop with negative gain can increase Voltage by decreasing pressure (since the fusor current is fixed by the 100Hz BW Current Loop), and vice versa. The initial pressure when the power supply is energized is chosen to be at the Paschen minimum (which I plan to empirically derive), to minimize the PI loop's time in the operating region where increasing pressure increases breakdown voltage.
 
 <table align="center" width="88%">
   <tr>
     <td align="center" width="43%" valign="top">
       <img src="images/Controller2_inner.png" alt="Controller 2 inner loop block diagram" width="100%">
       <br>
-      <em>Fig. 6 &mdash; Controller 2 loops: 10kHz current, 1kHz PLL, 100Hz voltage.</em>
+      <em>Fig. 7 &mdash; Controller 2 loops: 10kHz current, 1kHz PLL, 100Hz voltage.</em>
     </td>
     <td align="center" width="57%" valign="top">
       <img src="images/Controller2_outer.png" alt="Controller 2 outer loop block diagram" width="100%">
       <br>
-      <em>Fig. 7 &mdash; Controller 2 loops: 10Hz current, 0.1Hz pressure, 0.01Hz voltage.</em>
+      <em>Fig. 8 &mdash; Controller 2 loops: 10Hz current, 0.1Hz pressure, 0.01Hz voltage.</em>
     </td>
   </tr>
 </table>
@@ -103,7 +113,7 @@ Each IPOS module will consist of a buck converter feeding an LLC resonator drive
     <td align="center">
       <img src="images/PS2.png" alt="Power Supply Design 2 block diagram" width="100%">
       <br>
-      <em>Fig. 8 &mdash; Power Supply Design 2: IPOS module block diagram (early first pass).</em>
+      <em>Fig. 9 &mdash; Power Supply Design 2: IPOS module block diagram (early first pass).</em>
     </td>
   </tr>
 </table>
