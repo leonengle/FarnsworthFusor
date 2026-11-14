@@ -115,73 +115,24 @@ The plan is to use a Simulink model of the power converter to validate the power
   </tr>
 </table>
 
-## Hardware
-
-### Rectifier and Inverter PCB
-
-This PCB includes the rectifier, switcher and series capacitor for LLC stage. The design had several issues that are being fixed. 
-
-#### Top-Level Schematic
-
-<table align="center" width="80%">
-  <tr>
-    <td align="center">
-      <img src="images/PCB1_Schematic_Top.png" alt="Rectifier and Inverter PCB top-level schematic" width="100%">
-      <br>
-      <em>Fig. 10 &mdash; Rectifier and Inverter PCB: top-level schematic.</em>
-    </td>
-  </tr>
-</table>
-
-#### Rectifier & Inverter Schematic
-
-<table align="center" width="80%">
-  <tr>
-    <td align="center">
-      <img src="images/PCB1_Schematic_RI.png" alt="Rectifier and Inverter PCB rectifier and inverter schematic" width="100%">
-      <br>
-      <em>Fig. 11 &mdash; Rectifier and Inverter PCB: rectifier and inverter schematic.</em>
-    </td>
-  </tr>
-</table>
-
-#### Microcontroller Schematic
-
-<table align="center" width="60%">
-  <tr>
-    <td align="center">
-      <img src="images/PCB1_Schematic_uC.png" alt="Rectifier and Inverter PCB microcontroller schematic" width="100%">
-      <br>
-      <em>Fig. 12 &mdash; Rectifier and Inverter PCB: microcontroller schematic.</em>
-    </td>
-  </tr>
-</table>
-
-#### 2D & 3D View of PCB
+## Rectifier and Inverter PCB v2 (PCB1v2)
 
 <table align="center" width="100%">
-  <tr>
-    <td align="center" width="59%" valign="top">
-      <img src="images/PCB1_2D.png" alt="Rectifier and Inverter PCB 2D view" width="100%">
-      <br>
-      <em>Fig. 13 &mdash; Rectifier and Inverter PCB: 2D view.</em>
-    </td>
-    <td align="center" width="41%" valign="top">
-      <img src="images/PCB1_3D.png" alt="Rectifier and Inverter PCB 3D view" width="100%">
-      <br>
-      <em>Fig. 14 &mdash; Rectifier and Inverter PCB: 3D view.</em>
-    </td>
-  </tr>
-</table>
-
-### Rectifier and Inverter PCB v2 (PCB1v2)
-
-<table align="center" width="80%">
   <tr>
     <td align="center">
       <img src="images/PCB1v2_Top.png" alt="PCB1v2 top-level schematic" width="100%">
       <br>
-      <em>Fig. 15 &mdash; PCB1v2: top-level schematic.</em>
+      <em>Fig. 10 &mdash; PCB1v2: top-level schematic.</em>
+    </td>
+  </tr>
+</table>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center">
+      <img src="images/PCB1v2_IPM.png" alt="PCB1v2 IPM schematic" width="100%">
+      <br>
+      <em>Fig. 11 &mdash; PCB1v2: IPM schematic.</em>
     </td>
   </tr>
 </table>
@@ -191,65 +142,126 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
     <td align="center" width="50%" valign="top">
       <img src="images/PCB1v2_Rect.png" alt="PCB1v2 rectifier schematic" width="100%">
       <br>
-      <em>Fig. 16 &mdash; PCB1v2: rectifier schematic.</em>
-    </td>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_Inverter.png" alt="PCB1v2 inverter schematic" width="100%">
-      <br>
-      <em>Fig. 17 &mdash; PCB1v2: inverter schematic.</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_IPM.png" alt="PCB1v2 IPM schematic" width="100%">
-      <br>
-      <em>Fig. 18 &mdash; PCB1v2: IPM schematic.</em>
-    </td>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_Protection.png" alt="PCB1v2 protection schematic" width="100%">
-      <br>
-      <em>Fig. 19 &mdash; PCB1v2: protection schematic.</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_Control.png" alt="PCB1v2 control schematic" width="100%">
-      <br>
-      <em>Fig. 20 &mdash; PCB1v2: control schematic.</em>
+      <em>Fig. 12 &mdash; PCB1v2: rectifier schematic.</em>
     </td>
     <td align="center" width="50%" valign="top">
       <img src="images/PCB1v2_Sense.png" alt="PCB1v2 sensing schematic" width="100%">
       <br>
-      <em>Fig. 21 &mdash; PCB1v2: sensing schematic.</em>
+      <em>Fig. 13 &mdash; PCB1v2: sensing schematic.</em>
     </td>
   </tr>
+</table>
+
+<table align="center" width="100%">
   <tr>
     <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_5V.png" alt="PCB1v2 5V supply schematic" width="100%">
+      <img src="images/PCB1v2_Inverter.png" alt="PCB1v2 inverter schematic" width="100%">
       <br>
-      <em>Fig. 22 &mdash; PCB1v2: 5V supply schematic.</em>
+      <em>Fig. 14 &mdash; PCB1v2: inverter schematic.</em>
     </td>
+    <td align="center" width="50%" valign="top">
+      <img src="images/PCB1v2_Protection.png" alt="PCB1v2 protection schematic" width="100%">
+      <br>
+      <em>Fig. 15 &mdash; PCB1v2: protection schematic.</em>
+    </td>
+  </tr>
+</table>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center">
+      <img src="images/PCB1v2_Control.png" alt="PCB1v2 control schematic" width="100%">
+      <br>
+      <em>Fig. 16 &mdash; PCB1v2: control schematic.</em>
+    </td>
+  </tr>
+</table>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center">
+      <img src="images/PCB1v2_Aux.png" alt="PCB1v2 auxiliary supply schematic" width="100%">
+      <br>
+      <em>Fig. 17 &mdash; PCB1v2: auxiliary supply schematic.</em>
+    </td>
+  </tr>
+</table>
+
+<table align="center" width="100%">
+  <tr>
     <td align="center" width="50%" valign="top">
       <img src="images/PCB1v2_15V.png" alt="PCB1v2 15V supply schematic" width="100%">
       <br>
-      <em>Fig. 23 &mdash; PCB1v2: 15V supply schematic.</em>
+      <em>Fig. 18 &mdash; PCB1v2: 15V supply schematic.</em>
+    </td>
+    <td align="center" width="50%" valign="top">
+      <img src="images/PCB1v2_5V.png" alt="PCB1v2 5V supply schematic" width="100%">
+      <br>
+      <em>Fig. 19 &mdash; PCB1v2: 5V supply schematic.</em>
     </td>
   </tr>
 </table>
 
-<table align="center" width="50%">
+## Rectifier and Inverter PCB
+
+This PCB includes the rectifier, switcher and series capacitor for LLC stage. The design had several issues that are being fixed. 
+
+### Top-Level Schematic
+
+<table align="center" width="80%">
   <tr>
     <td align="center">
-      <img src="images/PCB1v2_Aux.png" alt="PCB1v2 auxiliary schematic" width="100%">
+      <img src="images/PCB1_Schematic_Top.png" alt="Rectifier and Inverter PCB top-level schematic" width="100%">
       <br>
-      <em>Fig. 24 &mdash; PCB1v2: auxiliary schematic.</em>
+      <em>Fig. 20 &mdash; Rectifier and Inverter PCB: top-level schematic.</em>
     </td>
   </tr>
 </table>
 
-### Voltage Multiplier PCB
+### Rectifier & Inverter Schematic
 
-#### Top-Level Schematic
+<table align="center" width="80%">
+  <tr>
+    <td align="center">
+      <img src="images/PCB1_Schematic_RI.png" alt="Rectifier and Inverter PCB rectifier and inverter schematic" width="100%">
+      <br>
+      <em>Fig. 21 &mdash; Rectifier and Inverter PCB: rectifier and inverter schematic.</em>
+    </td>
+  </tr>
+</table>
+
+### Microcontroller Schematic
+
+<table align="center" width="60%">
+  <tr>
+    <td align="center">
+      <img src="images/PCB1_Schematic_uC.png" alt="Rectifier and Inverter PCB microcontroller schematic" width="100%">
+      <br>
+      <em>Fig. 22 &mdash; Rectifier and Inverter PCB: microcontroller schematic.</em>
+    </td>
+  </tr>
+</table>
+
+### 2D & 3D View of PCB
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="59%" valign="top">
+      <img src="images/PCB1_2D.png" alt="Rectifier and Inverter PCB 2D view" width="100%">
+      <br>
+      <em>Fig. 23 &mdash; Rectifier and Inverter PCB: 2D view.</em>
+    </td>
+    <td align="center" width="41%" valign="top">
+      <img src="images/PCB1_3D.png" alt="Rectifier and Inverter PCB 3D view" width="100%">
+      <br>
+      <em>Fig. 24 &mdash; Rectifier and Inverter PCB: 3D view.</em>
+    </td>
+  </tr>
+</table>
+
+## Voltage Multiplier PCB
+
+### Top-Level Schematic
 
 <table align="center" width="80%">
   <tr>
@@ -261,7 +273,7 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
   </tr>
 </table>
 
-#### 2D & 3D View of PCB
+### 2D & 3D View of PCB
 
 <table align="center" width="100%">
   <tr>
@@ -278,7 +290,7 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
   </tr>
 </table>
 
-### Transformer Design
+## Transformer Design
 
 Bobbins and equations used to design transformer. UU core, wound non-concentrically to increase leakage inductance for LLC. Litz wire on primary. The transformer is mounted on machined HDPE mounts, since PLA/ABS do not have required dielectric constant to maintain creepage threshold.
 
