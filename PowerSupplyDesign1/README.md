@@ -115,7 +115,7 @@ The plan is to use a Simulink model of the power converter to validate the power
   </tr>
 </table>
 
-## Rectifier and Inverter PCB v2 (PCB1v2)
+## Rectifier and Inverter PCB Version 2
 
 <table align="center" width="100%">
   <tr>
