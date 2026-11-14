@@ -188,21 +188,6 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
   </tr>
 </table>
 
-<table align="center" width="80%">
-  <tr>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_15V.png" alt="PCB1v2 15V supply schematic" width="100%">
-      <br>
-      <em>Fig. 18 &mdash; PCB1v2: 15V supply schematic.</em>
-    </td>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_5V.png" alt="PCB1v2 5V supply schematic" width="100%">
-      <br>
-      <em>Fig. 19 &mdash; PCB1v2: 5V supply schematic.</em>
-    </td>
-  </tr>
-</table>
-
 ## Rectifier and Inverter PCB
 This PCB includes the rectifier, switcher and series capacitor for LLC stage. The design had several issues that were fixed in V2. For the full quality schematic see the Altium_Exported_PDFs directory.
 
