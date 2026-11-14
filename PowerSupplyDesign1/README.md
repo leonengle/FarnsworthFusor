@@ -140,36 +140,6 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
 
 <table align="center" width="80%">
   <tr>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_Rect.png" alt="PCB1v2 rectifier schematic" width="100%">
-      <br>
-      <em>Fig. 12 &mdash; PCB1v2: rectifier schematic.</em>
-    </td>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_Sense.png" alt="PCB1v2 sensing schematic" width="100%">
-      <br>
-      <em>Fig. 13 &mdash; PCB1v2: sensing schematic.</em>
-    </td>
-  </tr>
-</table>
-
-<table align="center" width="80%">
-  <tr>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_Inverter.png" alt="PCB1v2 inverter schematic" width="100%">
-      <br>
-      <em>Fig. 14 &mdash; PCB1v2: inverter schematic.</em>
-    </td>
-    <td align="center" width="50%" valign="top">
-      <img src="images/PCB1v2_Protection.png" alt="PCB1v2 protection schematic" width="100%">
-      <br>
-      <em>Fig. 15 &mdash; PCB1v2: protection schematic.</em>
-    </td>
-  </tr>
-</table>
-
-<table align="center" width="80%">
-  <tr>
     <td align="center">
       <img src="images/PCB1v2_Control.png" alt="PCB1v2 control schematic" width="100%">
       <br>
