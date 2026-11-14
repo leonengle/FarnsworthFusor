@@ -12,7 +12,7 @@ Recently achieved -20kVDC output at open load from 40VAC input (open-loop contro
 
 3D model of the power supply assembly and current build state. 
 
-<table align="center" width="70%">
+<table align="center" width="56%">
   <tr>
     <td align="center" width="58%" valign="top">
       <img src="images/Assembly_3D.png" alt="3D model of the power supply assembly" width="100%">
@@ -31,7 +31,7 @@ Recently achieved -20kVDC output at open load from 40VAC input (open-loop contro
 
 This model was used to verify output voltage, tune dead time, and determine DC link/voltage multiplier capacitances. 
 
-<table align="center" width="93%">
+<table align="center" width="74%">
   <tr>
     <td align="center">
       <img src="images/LTSpice.png" alt="LTSpice transient model of the power converter" width="100%">
@@ -49,7 +49,7 @@ Leakage inductance Lr and magnetizing inductance Lm were derived from an Ansys F
 
 The red RidleyBox sweep is Lm (XF secondary open) and the blue sweep is Lr (XF secondary shorted). 
 
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center" width="35%" valign="top">
       <img src="images/ansys.png" alt="Ansys FEA model of the transformer" width="100%">
@@ -70,7 +70,7 @@ These results were used to simulate LLC gain curves and create a feedforward fun
 
 Two models were used to derive LLC gain curves: a FHA computed with MATLAB and an LTSpice AC analysis. These models were used to determine a suitable resonant capacitor and series L (to add in series with Lr) to achieve desired gain curve. The series L was required since the fusor load is very light, damping series resonant peak. A peaky resonance is desired so the required output voltage range is attainable in a smaller range of frequencies. An L of 800uH (200uH Lr + 600uH series L) and C of 250nF resulted in desired series resonant frequency (fsr).
 
-<table align="center" width="93%">
+<table align="center" width="74%">
   <tr>
     <td align="center" width="50%" valign="top">
       <img src="images/matlab_fha.png" alt="LLC gain curve from MATLAB FHA" width="100%">
@@ -89,7 +89,7 @@ Two models were used to derive LLC gain curves: a FHA computed with MATLAB and a
 
 LT Spice has been used to simulate the LLC gain curve, including parasitics measured by RidleyBox. Next steps are to update MATLAB state-space model and feedforward function. 
 
-<table align="center" width="65%">
+<table align="center" width="52%">
   <tr>
     <td align="center">
       <img src="images/ltspice_LLC_parasitics.png" alt="LTSpice LLC gain curve including measured parasitics" width="100%">
@@ -105,7 +105,7 @@ LT Spice has been used to simulate the LLC gain curve, including parasitics meas
 
 The plan is to use a Simulink model of the power converter to validate the power supply control loop, then use the C2000 Toolbox to flash the control loop onto a TI C2000 microcontroller. The goal is to use the IV curve of a Townsend Avalanche in series with the voltage-to-frequency function to calculate required frequency as a function of i_error. 
 
-<table align="center" width="93%">
+<table align="center" width="74%">
   <tr>
     <td align="center">
       <img src="images/simulink_validation.png" alt="Simulink model of the power converter" width="100%">
@@ -118,7 +118,7 @@ The plan is to use a Simulink model of the power converter to validate the power
 ## Rectifier and Inverter PCB Version 2
 For the full quality schematic see the Altium_Exported_PDFs directory.
 
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center">
       <img src="images/PCB1v2_Top.png" alt="PCB1v2 top-level schematic" width="100%">
@@ -128,7 +128,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
   </tr>
 </table>
 
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center">
       <img src="images/PCB1v2_IPM.png" alt="PCB1v2 IPM schematic" width="100%">
@@ -138,7 +138,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
   </tr>
 </table>
 
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center" width="50%" valign="top">
       <img src="images/PCB1v2_Rect.png" alt="PCB1v2 rectifier schematic" width="100%">
@@ -153,7 +153,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
   </tr>
 </table>
 
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center" width="50%" valign="top">
       <img src="images/PCB1v2_Inverter.png" alt="PCB1v2 inverter schematic" width="100%">
@@ -168,7 +168,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
   </tr>
 </table>
 
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center">
       <img src="images/PCB1v2_Control.png" alt="PCB1v2 control schematic" width="100%">
@@ -178,7 +178,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
   </tr>
 </table>
 
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center">
       <img src="images/PCB1v2_Aux.png" alt="PCB1v2 auxiliary supply schematic" width="100%">
@@ -188,7 +188,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
   </tr>
 </table>
 
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center" width="50%" valign="top">
       <img src="images/PCB1v2_15V.png" alt="PCB1v2 15V supply schematic" width="100%">
@@ -206,9 +206,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
 ## Rectifier and Inverter PCB
 This PCB includes the rectifier, switcher and series capacitor for LLC stage. The design had several issues that were fixed in V2. For the full quality schematic see the Altium_Exported_PDFs directory.
 
-### Top-Level Schematic
-
-<table align="center" width="80%">
+<table align="center" width="64%">
   <tr>
     <td align="center">
       <img src="images/PCB1_Schematic_Top.png" alt="Rectifier and Inverter PCB top-level schematic" width="100%">
@@ -218,9 +216,7 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
   </tr>
 </table>
 
-### Rectifier & Inverter Schematic
-
-<table align="center" width="80%">
+<table align="center" width="64%">
   <tr>
     <td align="center">
       <img src="images/PCB1_Schematic_RI.png" alt="Rectifier and Inverter PCB rectifier and inverter schematic" width="100%">
@@ -230,9 +226,7 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
   </tr>
 </table>
 
-### Microcontroller Schematic
-
-<table align="center" width="60%">
+<table align="center" width="48%">
   <tr>
     <td align="center">
       <img src="images/PCB1_Schematic_uC.png" alt="Rectifier and Inverter PCB microcontroller schematic" width="100%">
@@ -242,9 +236,7 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
   </tr>
 </table>
 
-### 2D & 3D View of PCB
-
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center" width="59%" valign="top">
       <img src="images/PCB1_2D.png" alt="Rectifier and Inverter PCB 2D view" width="100%">
@@ -261,9 +253,8 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
 
 ## Voltage Multiplier PCB
 For the full quality schematic see the Altium_Exported_PDFs directory.
-### Top-Level Schematic
 
-<table align="center" width="80%">
+<table align="center" width="64%">
   <tr>
     <td align="center">
       <img src="images/PCB2_Schematic.png" alt="Voltage Multiplier PCB top-level schematic" width="100%">
@@ -273,9 +264,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
   </tr>
 </table>
 
-### 2D & 3D View of PCB
-
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center" width="59%" valign="top">
       <img src="images/PCB2_2D.png" alt="Voltage Multiplier PCB 2D view" width="100%">
@@ -294,7 +283,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
 
 Bobbins and equations used to design transformer. UU core, wound non-concentrically to increase leakage inductance for LLC. Litz wire on primary. The transformer is mounted on machined HDPE mounts, since PLA/ABS do not have required dielectric constant to maintain creepage threshold.
 
-<table align="center" width="100%">
+<table align="center" width="80%">
   <tr>
     <td align="center" width="65%" valign="top">
       <img src="images/xf_bobbins.png" alt="Transformer bobbins and design equations" width="100%">
