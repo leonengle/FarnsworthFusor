@@ -188,7 +188,7 @@ For the full quality schematic see the Altium_Exported_PDFs directory.
   </tr>
 </table>
 
-## Rectifier and Inverter PCB
+## Rectifier and Inverter PCB Version 1 (For Senior Design Project)
 This PCB includes the rectifier, switcher and series capacitor for LLC stage. The design had several issues that were fixed in V2. For the full quality schematic see the Altium_Exported_PDFs directory.
 
 <table align="center" width="64%">
