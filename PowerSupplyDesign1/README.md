@@ -116,6 +116,7 @@ The plan is to use a Simulink model of the power converter to validate the power
 </table>
 
 ## Rectifier and Inverter PCB Version 2
+For the full quality schematic see the Altium_Exported_PDFs directory.
 
 <table align="center" width="100%">
   <tr>
@@ -203,8 +204,7 @@ The plan is to use a Simulink model of the power converter to validate the power
 </table>
 
 ## Rectifier and Inverter PCB
-
-This PCB includes the rectifier, switcher and series capacitor for LLC stage. The design had several issues that are being fixed. 
+This PCB includes the rectifier, switcher and series capacitor for LLC stage. The design had several issues that were fixed in V2. For the full quality schematic see the Altium_Exported_PDFs directory.
 
 ### Top-Level Schematic
 
@@ -260,7 +260,7 @@ This PCB includes the rectifier, switcher and series capacitor for LLC stage. Th
 </table>
 
 ## Voltage Multiplier PCB
-
+For the full quality schematic see the Altium_Exported_PDFs directory.
 ### Top-Level Schematic
 
 <table align="center" width="80%">
